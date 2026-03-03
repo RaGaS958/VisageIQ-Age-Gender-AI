@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340">
+  <defs>
+    <linearGradient id="chartBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0c14"/>
+      <stop offset="100%" style="stop-color:#0c0e1a"/>
+    </linearGradient>
+
+    <!-- Bar: Original Red shades -->
+    <linearGradient id="redTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+    <linearGradient id="redFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+    <linearGradient id="redSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b91c1c"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+
+    <!-- Bar: VisageIQ Purple shades -->
+    <linearGradient id="purpTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4b5fd"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="purpFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c6af7"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="purpSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4c3fb5"/>
+      <stop offset="100%" style="stop-color:#6254cc"/>
+    </linearGradient>
+
+    <!-- Bar: SOTA Green shades -->
+    <linearGradient id="greenTop2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ee7b7"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <linearGradient id="greenFront2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <linearGradient id="greenSide2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#047857"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+
+    <filter id="barShadow">
+      <feDropShadow dx="3" dy="6" stdDeviation="6" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="340" fill="url(#chartBg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" font-weight="bold" fill="#a78bfa">3D Performance Comparison</text>
+  <text x="450" y="48" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#4a5568">Original ResNet50 vs VisageIQ EfficientNetB3 vs State-of-the-Art</text>
+
+  <!-- Isometric floor grid -->
+  <g opacity="0.07" stroke="#a78bfa" stroke-width="0.8">
+    <!-- Horizontal floor lines -->
+    <line x1="70" y1="280" x2="870" y2="280"/>
+    <line x1="70" y1="250" x2="870" y2="250"/>
+    <line x1="70" y1="220" x2="870" y2="220"/>
+    <line x1="70" y1="190" x2="870" y2="190"/>
+    <line x1="70" y1="160" x2="870" y2="160"/>
+    <line x1="70" y1="130" x2="870" y2="130"/>
+    <line x1="70" y1="100" x2="870" y2="100"/>
+    <!-- Vertical dividers -->
+    <line x1="70" y1="280" x2="70" y2="80"/>
+    <line x1="270" y1="280" x2="270" y2="80"/>
+    <line x1="470" y1="280" x2="470" y2="80"/>
+    <line x1="670" y1="280" x2="670" y2="80"/>
+    <line x1="870" y1="280" x2="870" y2="80"/>
+  </g>
+
+  <!-- Y-axis labels -->
+  <text x="58" y="283" text-anchor="end" font-family="'Courier New', monospace" font-size="8" fill="#4a5568">0%</text>
+  <text x="58" y="253" text-anchor="end" font-family="'Courier New', monospace" font-size="8" fill="#4a5568">25%</text>
+  <text x="58" y="223" text-anchor="end" font-family="'Courier New', monospace" font-size="8" fill="#4a5568">50%</text>
+  <text x="58" y="193" text-anchor="end" font-family="'Courier New', monospace" font-size="8" fill="#4a5568">75%</text>
+  <text x="58" y="163" text-anchor="end" font-family="'Courier New', monospace" font-size="8" fill="#4a5568">100%</text>
+
+  <!-- ═════════════ GROUP 1: Gender Accuracy ═════════════ -->
+  <!-- Label -->
+  <text x="220" y="302" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#8892a4">Gender Accuracy</text>
+
+  <!-- Bar: Original (52%) — height=52*1.6=83px -->
+  <g filter="url(#barShadow)" transform="translate(95, 197)">
+    <!-- Front face -->
+    <polygon points="0,0 40,0 40,83 0,83" fill="url(#redFront)" opacity="0.9"/>
+    <!-- Top face -->
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#redTop)" opacity="0.95"/>
+    <!-- Right side -->
+    <polygon points="40,0 52,-9 52,74 40,83" fill="url(#redSide)" opacity="0.9"/>
+    <!-- Value label on top -->
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#f87171">52%</text>
+  </g>
+
+  <!-- Bar: VisageIQ (91%) — height=91*1.6=146px -->
+  <g filter="url(#barShadow)" transform="translate(155, 134)">
+    <polygon points="0,0 40,0 40,146 0,146" fill="url(#purpFront)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#purpTop)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,137 40,146" fill="url(#purpSide)" opacity="0.9"/>
+    <!-- Glow on top -->
+    <ellipse cx="26" cy="-4" rx="22" ry="6" fill="#a78bfa" opacity="0.3"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" font-weight="bold" fill="#a78bfa">91%</text>
+  </g>
+
+  <!-- Bar: SOTA (96%) — height=96*1.6=154px -->
+  <g filter="url(#barShadow)" transform="translate(215, 126)">
+    <polygon points="0,0 40,0 40,154 0,154" fill="url(#greenFront2)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#greenTop2)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,145 40,154" fill="url(#greenSide2)" opacity="0.9"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#6ee7b7">96%</text>
+  </g>
+
+  <!-- ═════════════ GROUP 2: Age MAE ═════════════ -->
+  <!-- (inverted — lower = better, represent as improvement score) -->
+  <text x="420" y="302" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#8892a4">Age MAE (Lower=Better)</text>
+  <!-- Original ~15yr → score 15/15*100=100 → height 160px (BAD = tall) -->
+  <!-- Show bar chart reversed — normalize to 100px base -->
+
+  <!-- Original (15yr → score 20%) -->
+  <g filter="url(#barShadow)" transform="translate(297, 248)">
+    <polygon points="0,0 40,0 40,32 0,32" fill="url(#redFront)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#redTop)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,23 40,32" fill="url(#redSide)" opacity="0.9"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#f87171">15 yrs</text>
+  </g>
+
+  <!-- VisageIQ (6.5yr → score 56%) — height 90px -->
+  <g filter="url(#barShadow)" transform="translate(357, 191)">
+    <polygon points="0,0 40,0 40,89 0,89" fill="url(#purpFront)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#purpTop)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,80 40,89" fill="url(#purpSide)" opacity="0.9"/>
+    <ellipse cx="26" cy="-4" rx="22" ry="6" fill="#a78bfa" opacity="0.3"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" font-weight="bold" fill="#a78bfa">6.5 yrs</text>
+  </g>
+
+  <!-- SOTA (4yr → score 75%) — height 120px -->
+  <g filter="url(#barShadow)" transform="translate(417, 160)">
+    <polygon points="0,0 40,0 40,120 0,120" fill="url(#greenFront2)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#greenTop2)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,111 40,120" fill="url(#greenSide2)" opacity="0.9"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#6ee7b7">4 yrs</text>
+  </g>
+
+  <!-- ═════════════ GROUP 3: Stability ═════════════ -->
+  <text x="620" y="302" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#8892a4">Training Stability</text>
+
+  <!-- Original (10%) -->
+  <g filter="url(#barShadow)" transform="translate(497, 264)">
+    <polygon points="0,0 40,0 40,16 0,16" fill="url(#redFront)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#redTop)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,7 40,16" fill="url(#redSide)" opacity="0.9"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#f87171">10%</text>
+  </g>
+
+  <!-- VisageIQ (92%) -->
+  <g filter="url(#barShadow)" transform="translate(557, 133)">
+    <polygon points="0,0 40,0 40,147 0,147" fill="url(#purpFront)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#purpTop)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,138 40,147" fill="url(#purpSide)" opacity="0.9"/>
+    <ellipse cx="26" cy="-4" rx="22" ry="6" fill="#a78bfa" opacity="0.3"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" font-weight="bold" fill="#a78bfa">92%</text>
+  </g>
+
+  <!-- SOTA (95%) -->
+  <g filter="url(#barShadow)" transform="translate(617, 128)">
+    <polygon points="0,0 40,0 40,152 0,152" fill="url(#greenFront2)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#greenTop2)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,143 40,152" fill="url(#greenSide2)" opacity="0.9"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#6ee7b7">95%</text>
+  </g>
+
+  <!-- ═════════════ GROUP 4: Params Efficiency ═════════════ -->
+  <text x="810" y="302" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#8892a4">Efficiency Score</text>
+
+  <!-- Original (30%) -->
+  <g filter="url(#barShadow)" transform="translate(695, 232)">
+    <polygon points="0,0 40,0 40,48 0,48" fill="url(#redFront)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#redTop)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,39 40,48" fill="url(#redSide)" opacity="0.9"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#f87171">30%</text>
+  </g>
+
+  <!-- VisageIQ (85%) -->
+  <g filter="url(#barShadow)" transform="translate(755, 144)">
+    <polygon points="0,0 40,0 40,136 0,136" fill="url(#purpFront)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#purpTop)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,127 40,136" fill="url(#purpSide)" opacity="0.9"/>
+    <ellipse cx="26" cy="-4" rx="22" ry="6" fill="#a78bfa" opacity="0.3"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" font-weight="bold" fill="#a78bfa">85%</text>
+  </g>
+
+  <!-- SOTA (90%) -->
+  <g filter="url(#barShadow)" transform="translate(815, 136)">
+    <polygon points="0,0 40,0 40,144 0,144" fill="url(#greenFront2)" opacity="0.9"/>
+    <polygon points="0,0 40,0 52,-9 12,-9" fill="url(#greenTop2)" opacity="0.95"/>
+    <polygon points="40,0 52,-9 52,135 40,144" fill="url(#greenSide2)" opacity="0.9"/>
+    <text x="20" y="-14" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#6ee7b7">90%</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(20,310)">
+    <rect width="260" height="22" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <rect x="10" y="7" width="12" height="8" rx="2" fill="#ef4444" opacity="0.85"/>
+    <text x="27" y="16" font-family="'Courier New', monospace" font-size="8" fill="#8892a4">Original (ResNet50)</text>
+    <rect x="115" y="7" width="12" height="8" rx="2" fill="#a78bfa" opacity="0.85"/>
+    <text x="132" y="16" font-family="'Courier New', monospace" font-size="8" fill="#8892a4">VisageIQ</text>
+    <rect x="195" y="7" width="12" height="8" rx="2" fill="#34d399" opacity="0.85"/>
+    <text x="212" y="16" font-family="'Courier New', monospace" font-size="8" fill="#8892a4">SOTA</text>
+  </g>
+</svg>

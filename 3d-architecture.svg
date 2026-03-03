@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0c14"/>
+      <stop offset="100%" style="stop-color:#0f1020"/>
+    </linearGradient>
+    <!-- Purple top -->
+    <linearGradient id="purpleTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c6af7"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <!-- Purple left -->
+    <linearGradient id="purpleLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4c3fb5"/>
+      <stop offset="100%" style="stop-color:#6254cc"/>
+    </linearGradient>
+    <!-- Purple right -->
+    <linearGradient id="purpleRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b2f9e"/>
+      <stop offset="100%" style="stop-color:#4c3fb5"/>
+    </linearGradient>
+    <!-- Cyan top -->
+    <linearGradient id="cyanTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#67e8f9"/>
+    </linearGradient>
+    <linearGradient id="cyanLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="cyanRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0e7490"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
+    </linearGradient>
+    <!-- Green top -->
+    <linearGradient id="greenTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#34d399"/>
+      <stop offset="100%" style="stop-color:#6ee7b7"/>
+    </linearGradient>
+    <linearGradient id="greenLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+    <linearGradient id="greenRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#047857"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <!-- Pink top -->
+    <linearGradient id="pinkTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f472b6"/>
+      <stop offset="100%" style="stop-color:#fb7185"/>
+    </linearGradient>
+    <linearGradient id="pinkLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#be185d"/>
+      <stop offset="100%" style="stop-color:#db2777"/>
+    </linearGradient>
+    <linearGradient id="pinkRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9d174d"/>
+      <stop offset="100%" style="stop-color:#be185d"/>
+    </linearGradient>
+    <!-- Orange top -->
+    <linearGradient id="orangeTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fb923c"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="orangeLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c2410c"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <linearGradient id="orangeRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9a3412"/>
+      <stop offset="100%" style="stop-color:#c2410c"/>
+    </linearGradient>
+
+    <filter id="glow-purple">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="url(#bg)" rx="16"/>
+
+  <!-- Grid lines -->
+  <g opacity="0.06" stroke="#a78bfa" stroke-width="0.5">
+    <line x1="0" y1="100" x2="900" y2="100"/>
+    <line x1="0" y1="200" x2="900" y2="200"/>
+    <line x1="0" y1="300" x2="900" y2="300"/>
+    <line x1="0" y1="400" x2="900" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="520"/>
+    <line x1="200" y1="0" x2="200" y2="520"/>
+    <line x1="300" y1="0" x2="300" y2="520"/>
+    <line x1="400" y1="0" x2="400" y2="520"/>
+    <line x1="500" y1="0" x2="500" y2="520"/>
+    <line x1="600" y1="0" x2="600" y2="520"/>
+    <line x1="700" y1="0" x2="700" y2="520"/>
+    <line x1="800" y1="0" x2="800" y2="520"/>
+  </g>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-family="'Courier New', monospace" font-size="18" font-weight="bold" fill="#a78bfa">VisageIQ — 3D Model Architecture</text>
+  <text x="450" y="58" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#4a5568">EfficientNetB3 Multi-Task CNN · Isometric View</text>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- Isometric 3D block helper macro    -->
+  <!-- Block at isometric position        -->
+  <!-- Each block: top face, left face, right face -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- ── BLOCK 1: INPUT (Orange) ── cx=100, cy=380, w=100, h=40, d=20 -->
+  <g filter="url(#shadow)" transform="translate(60,340)">
+    <!-- Top face -->
+    <polygon points="50,0 150,0 150,20 50,20" fill="url(#orangeTop)" opacity="0.95"/>
+    <!-- Left face -->
+    <polygon points="50,20 50,60 50,60 50,20" fill="url(#orangeLeft)" opacity="0.95"/>
+    <!-- Front face (right) -->
+    <polygon points="50,20 150,20 150,60 50,60" fill="url(#orangeLeft)" opacity="0.85"/>
+    <!-- Right edge -->
+    <polygon points="150,20 170,10 170,50 150,60" fill="url(#orangeRight)" opacity="0.95"/>
+    <!-- Top edge -->
+    <polygon points="50,0 150,0 170,−10 70,−10" fill="url(#orangeTop)" opacity="0.95"/>
+    <text x="100" y="46" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="white">INPUT</text>
+    <text x="100" y="57" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="rgba(255,255,255,0.7)">128×128×3</text>
+  </g>
+
+  <!-- Connecting arrow 1→2 -->
+  <g opacity="0.8">
+    <line x1="230" y1="370" x2="270" y2="370" stroke="#a78bfa" stroke-width="2" stroke-dasharray="4,3"/>
+    <polygon points="270,366 278,370 270,374" fill="#a78bfa"/>
+  </g>
+
+  <!-- ── BLOCK 2: EfficientNetB3 (Purple, TALL) ── -->
+  <g filter="url(#shadow)" transform="translate(270,260)">
+    <!-- Front face -->
+    <polygon points="0,30 140,30 140,140 0,140" fill="url(#purpleLeft)" opacity="0.9"/>
+    <!-- Top face -->
+    <polygon points="0,30 140,30 160,15 20,15" fill="url(#purpleTop)" opacity="0.95"/>
+    <!-- Right face -->
+    <polygon points="140,30 160,15 160,125 140,140" fill="url(#purpleRight)" opacity="0.95"/>
+    <!-- Glow line on top -->
+    <line x1="0" y1="30" x2="140" y2="30" stroke="#a78bfa" stroke-width="1.5" opacity="0.8"/>
+    <text x="70" y="82" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="white">EfficientNetB3</text>
+    <text x="70" y="96" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="rgba(255,255,255,0.7)">Backbone</text>
+    <text x="70" y="110" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="rgba(167,139,250,0.9)">10.8M params</text>
+    <text x="70" y="124" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="rgba(167,139,250,0.7)">ImageNet</text>
+  </g>
+
+  <!-- Connecting arrow 2→3 -->
+  <g opacity="0.8">
+    <line x1="430" y1="350" x2="470" y2="350" stroke="#67e8f9" stroke-width="2" stroke-dasharray="4,3"/>
+    <polygon points="470,346 478,350 470,354" fill="#67e8f9"/>
+  </g>
+
+  <!-- ── BLOCK 3: GlobalAvgPool (Cyan, medium) ── -->
+  <g filter="url(#shadow)" transform="translate(470,310)">
+    <polygon points="0,20 110,20 110,100 0,100" fill="url(#cyanLeft)" opacity="0.9"/>
+    <polygon points="0,20 110,20 125,10 15,10" fill="url(#cyanTop)" opacity="0.95"/>
+    <polygon points="110,20 125,10 125,90 110,100" fill="url(#cyanRight)" opacity="0.95"/>
+    <line x1="0" y1="20" x2="110" y2="20" stroke="#67e8f9" stroke-width="1.5" opacity="0.8"/>
+    <text x="55" y="62" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="white">GlobalAvgPool</text>
+    <text x="55" y="75" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="rgba(255,255,255,0.6)">Feature Vector</text>
+  </g>
+
+  <!-- FORK arrows from GAP -->
+  <!-- Arrow to Age branch (upper) -->
+  <g opacity="0.8">
+    <path d="M 600 335 Q 640 290 670 270" stroke="#6ee7b7" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+    <polygon points="666,263 674,272 664,274" fill="#6ee7b7"/>
+    <text x="630" y="300" font-family="'Courier New', monospace" font-size="8" fill="#6ee7b7">AGE</text>
+  </g>
+  <!-- Arrow to Gender branch (lower) -->
+  <g opacity="0.8">
+    <path d="M 600 370 Q 640 400 670 420" stroke="#f472b6" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+    <polygon points="665,415 675,422 665,426" fill="#f472b6"/>
+    <text x="630" y="410" font-family="'Courier New', monospace" font-size="8" fill="#f472b6">GENDER</text>
+  </g>
+
+  <!-- ── BLOCK 4: Age Head (Green) ── top branch -->
+  <g filter="url(#shadow)" transform="translate(665,195)">
+    <polygon points="0,20 100,20 100,90 0,90" fill="url(#greenLeft)" opacity="0.9"/>
+    <polygon points="0,20 100,20 115,10 15,10" fill="url(#greenTop)" opacity="0.95"/>
+    <polygon points="100,20 115,10 115,80 100,90" fill="url(#greenRight)" opacity="0.95"/>
+    <line x1="0" y1="20" x2="100" y2="20" stroke="#6ee7b7" stroke-width="1.5" opacity="0.8"/>
+    <text x="50" y="55" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="white">Age Head</text>
+    <text x="50" y="68" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="rgba(255,255,255,0.6)">Dense 256→128</text>
+    <text x="50" y="80" text-anchor="middle" font-family="'Courier New', monospace" font-size="7" fill="rgba(110,231,183,0.8)">BN+Drop(0.3)</text>
+  </g>
+
+  <!-- ── BLOCK 5: Gender Head (Pink) ── bottom branch -->
+  <g filter="url(#shadow)" transform="translate(665,430)">
+    <polygon points="0,20 100,20 100,90 0,90" fill="url(#pinkLeft)" opacity="0.9"/>
+    <polygon points="0,20 100,20 115,10 15,10" fill="url(#pinkTop)" opacity="0.95"/>
+    <polygon points="100,20 115,10 115,80 100,90" fill="url(#pinkRight)" opacity="0.95"/>
+    <line x1="0" y1="20" x2="100" y2="20" stroke="#f472b6" stroke-width="1.5" opacity="0.8"/>
+    <text x="50" y="55" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="white">Gender Head</text>
+    <text x="50" y="68" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="rgba(255,255,255,0.6)">Dense 256→128</text>
+    <text x="50" y="80" text-anchor="middle" font-family="'Courier New', monospace" font-size="7" fill="rgba(244,114,182,0.8)">BN+Drop(0.3)</text>
+  </g>
+
+  <!-- Arrows to outputs -->
+  <g opacity="0.8">
+    <line x1="770" y1="255" x2="800" y2="255" stroke="#6ee7b7" stroke-width="2" stroke-dasharray="4,3"/>
+    <polygon points="800,251 808,255 800,259" fill="#6ee7b7"/>
+  </g>
+  <g opacity="0.8">
+    <line x1="770" y1="490" x2="800" y2="490" stroke="#f472b6" stroke-width="2" stroke-dasharray="4,3"/>
+    <polygon points="800,486 808,490 800,494" fill="#f472b6"/>
+  </g>
+
+  <!-- ── OUTPUT: Age ── -->
+  <g transform="translate(808,225)">
+    <rect width="72" height="50" rx="8" fill="rgba(52,211,153,0.15)" stroke="#6ee7b7" stroke-width="1.5"/>
+    <text x="36" y="20" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" font-weight="bold" fill="#6ee7b7">AGE OUT</text>
+    <text x="36" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="white">27.4 yrs</text>
+    <text x="36" y="46" text-anchor="middle" font-family="'Courier New', monospace" font-size="7" fill="rgba(255,255,255,0.5)">σ × 100</text>
+  </g>
+
+  <!-- ── OUTPUT: Gender ── -->
+  <g transform="translate(808,465)">
+    <rect width="72" height="50" rx="8" fill="rgba(244,114,182,0.15)" stroke="#f472b6" stroke-width="1.5"/>
+    <text x="36" y="20" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" font-weight="bold" fill="#f472b6">GENDER OUT</text>
+    <text x="36" y="34" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="white">Female</text>
+    <text x="36" y="46" text-anchor="middle" font-family="'Courier New', monospace" font-size="7" fill="rgba(255,255,255,0.5)">σ=0.87</text>
+  </g>
+
+  <!-- Floating particles -->
+  <circle cx="50" cy="80" r="2" fill="#a78bfa" opacity="0.4"/>
+  <circle cx="150" cy="120" r="1.5" fill="#67e8f9" opacity="0.3"/>
+  <circle cx="850" cy="180" r="2" fill="#6ee7b7" opacity="0.4"/>
+  <circle cx="820" cy="300" r="1.5" fill="#f472b6" opacity="0.3"/>
+  <circle cx="200" cy="450" r="2" fill="#fbbf24" opacity="0.3"/>
+  <circle cx="500" cy="80" r="1.5" fill="#a78bfa" opacity="0.35"/>
+
+  <!-- Glow halos behind big blocks -->
+  <ellipse cx="340" cy="370" rx="80" ry="30" fill="#7c6af7" opacity="0.07"/>
+  <ellipse cx="530" cy="365" rx="60" ry="25" fill="#22d3ee" opacity="0.07"/>
+  <ellipse cx="715" cy="275" rx="55" ry="20" fill="#34d399" opacity="0.07"/>
+  <ellipse cx="715" cy="510" rx="55" ry="20" fill="#f472b6" opacity="0.07"/>
+
+  <!-- Legend -->
+  <g transform="translate(18,455)">
+    <rect width="200" height="58" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <circle cx="16" cy="14" r="5" fill="#fb923c" opacity="0.9"/>
+    <text x="26" y="18" font-family="'Courier New', monospace" font-size="8" fill="#8892a4">Input Layer</text>
+    <circle cx="16" cy="28" r="5" fill="#7c6af7" opacity="0.9"/>
+    <text x="26" y="32" font-family="'Courier New', monospace" font-size="8" fill="#8892a4">Backbone (frozen→unfrozen)</text>
+    <circle cx="16" cy="42" r="5" fill="#22d3ee" opacity="0.9"/>
+    <text x="26" y="46" font-family="'Courier New', monospace" font-size="8" fill="#8892a4">Feature Pooling</text>
+    <circle cx="100" cy="14" r="5" fill="#34d399" opacity="0.9"/>
+    <text x="110" y="18" font-family="'Courier New', monospace" font-size="8" fill="#8892a4">Age Head</text>
+    <circle cx="100" cy="28" r="5" fill="#f472b6" opacity="0.9"/>
+    <text x="110" y="32" font-family="'Courier New', monospace" font-size="8" fill="#8892a4">Gender Head</text>
+  </g>
+</svg>
