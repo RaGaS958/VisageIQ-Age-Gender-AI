@@ -1,7 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=42&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&height=80&lines=VisageIQ+🧠;Age+%26+Gender+AI" alt="VisageIQ" />
-
+<img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=42&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&height=80&lines=VisageIQ+%F0%9F%A7%A0;Age+%26+Gender+AI" alt="VisageIQ" />
 <br/>
 
 **Multi-Task Deep Learning for Real-Time Age Estimation & Gender Classification**
@@ -63,7 +62,7 @@ The model addresses five critical failure modes found in vanilla implementations
 
 <div align="center">
 
-![3D Stats Cards](assets/3d-stats.svg)
+![3D Stats Cards](3d-stats.svg)
 
 </div>
 
@@ -75,7 +74,7 @@ The model addresses five critical failure modes found in vanilla implementations
 
 <div align="center">
 
-![3D Architecture Isometric](assets/3d-architecture.svg)
+![3D Architecture Isometric](3d-architecture.svg)
 
 </div>
 
@@ -140,7 +139,7 @@ pie title Model Parameter Distribution (11.6M Total)
 
 <div align="center">
 
-![3D Training Pipeline](assets/3d-pipeline.svg)
+![3D Training Pipeline](3d-pipeline.svg)
 
 </div>
 
@@ -203,7 +202,7 @@ graph LR
 
 <div align="center">
 
-![3D Performance Benchmarks](assets/3d-benchmarks.svg)
+![3D Performance Benchmarks](3d-benchmarks.svg)
 
 </div>
 
